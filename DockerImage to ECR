@@ -1,0 +1,28 @@
+ # Docker Image pushed to AWS ECR steps
+    1 sudo apt update
+    2  sudo apt install doker.io -y
+    3  sudo apt install docker.io -y
+    4  docker --version
+    5  sudo apt  install awscli -y
+    6  aws --version
+    7  aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 3382-9041-7453.dkr.ecr.us-east-2.amazonaws.com
+    8  sudo apt update
+    9  aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 338290417453.dkr.ecr.us-east-2.amazonaws.com
+   10  aws configure
+   11  aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 338290417453.dkr.ecr.us-east-2.amazonaws.com
+   12  sudo usermod -a -G docker $USER
+   13  aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 338290417453.dkr.ecr.us-east-2.amazonaws.com
+   14  sudo apt update
+   15  aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 338290417453.dkr.ecr.us-east-2.amazonaws.com
+   16  git clone https://bitbucket.org/ananthkannan/mydockerrepo; cd mydockerrepo/pythonApp
+   17  ls -al
+   18  clear
+   19  docker build . -t
+   20  docker build . -t mypythonapp
+   21  docker images
+   22  ls -al
+   23  docker tag mydockerrepo:latest 338290417453.dkr.ecr.us-east-2.amazonaws.com/mydockerrepo:latest
+   24  docker tag mypythonapp:latest 338290417453.dkr.ecr.us-east-2.amazonaws.com/mydockerrepo:latest
+   25  docker images
+   26  docker push 338290417453.dkr.ecr.us-east-2.amazonaws.com/mydockerrepo:latest
+   27  history
